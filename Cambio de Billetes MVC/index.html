@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Billetes</title>
+</head>
+<body>
+    <section id="clienteForm">
+    <h3>Datos del Cliente</h3>
+    <input type="text" id="clienteForm_inNombre" placeholder="Nombre">
+    <input type="number" id="clienteForm_inBillete" placeholder="Billete">
+    <input type="number" id="clienteForm_inCambio50" placeholder="Cambio de 50">
+    <input type="number" id="clienteForm_inCambio20" placeholder="Cambio de 20">
+    <input type="number" id="clienteForm_inCambio10" placeholder="Cambio de 10">
+    <button id="clienteForm_btProcesar">Procesar</button>
+    </section>
+
+    <section id="mainForm">
+        <h3>Informacion de la Casa</h3>
+        <div id="mainForm_salida"></div>
+    </section>
+    <script type="module">
+        import Cl_Principal from "./dist/principal.js";
+        new Cl_Principal();
+    </script>
+</body>
+</html>
