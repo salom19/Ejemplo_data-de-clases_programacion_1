@@ -1,0 +1,81 @@
+section {
+  border: 3px solid blue;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 3cap;
+}
+label {
+  margin-top: 5px;
+}
+h3 {
+  color: white;
+  background-color: blue;
+  padding: 3px;
+  border-radius: 5cap;
+  text-align: center;
+}
+h4 {
+  margin-top: 1px;
+  margin-bottom: 0px;
+  font-style: italic;
+  font-weight: normal;
+  color: seagreen;
+}
+button {
+  margin-top: 10px;
+  background-color: blue;
+  color: white;
+  border-radius: 1cap;
+  padding: 5px;
+}
+input {
+  width: 100px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+#formJugador {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 250px;
+  background-color: white;
+  margin: auto;
+  margin-top: 20px;
+}
+#mainForm {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  background-color: white;
+  margin: auto;
+  margin-top: 10px ;
+}
+.colCurrency {
+  text-align: right;
+  padding-left: 10px;
+}
+.colNumber {
+  column-width: 50px;
+}
+.divSalida {
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+    text-align: center;
+    background-color: blue;
+    border-radius: 10px;
+    width: 150px;
+    margin: auto;
+    border: 1px solid black;
+    color: white;
+    
+}
+body{
+    background-color: lightgray;
+}

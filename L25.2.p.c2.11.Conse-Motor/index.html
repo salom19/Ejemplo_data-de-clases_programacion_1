@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSE-MOTOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>CONSE-MOTOR</h2>
+
+    <section id="formVehiculo" hidden>
+        <h3>Vehiculo: <span id="formVehiculo_lblTipo"></span></h3>
+        <label>Placa: 
+            <input type="text" id="formVehiculo_InPlaca">
+        </label>
+
+        <label>Color:
+            <input type="text" id="formVehiculo_InColor">
+        </label>
+
+        <label hidden id="formVehiculo_DivInPrecioBase">Precio Base: 
+            <input type="number" id="formVehiculo_InPrecioBase">
+        </label>
+
+        <label hidden id="formVehiculo_DivInModelo">Modelo: 
+            <input type="text" id="formVehiculo_InModelo">
+        </label>
+
+        <div>
+            <button id="formVehiculo_btAceptarAuto" hidden>Aceptar</button>
+            <button id="formVehiculo_btAceptarMoto" hidden>Aceptar</button>
+            <button id="formVehiculo_btCancelar">Cancelar</button>
+        </div>
+    </section>
+
+    <section id="mainForm">
+        <h3>Vehiculos Procesados</h3>
+        <table>
+            <thead>
+                <th>Placa</th>
+                <th>Color</th>
+                <th>Precio Base</th>
+                <th>Modelo</th>
+                <th>Precio</th>
+                <th>Precio Final</th>
+                <th>Comision</th>
+            </thead>
+            <tbody id="mainForm_DataVehiculo"></tbody>
+        </table>
+
+        <div class="divBotones">
+            <button id="mainForm_btAgregarAuto">+Auto</button>
+            <button id="mainForm_btAgregarMoto">+Moto</button>
+        </div>
+
+        <h3>Informacion de Concesionario</h3>
+
+        <div class="divSalida">
+            <label>Monto Total de Ventas: <span id="mainForm_lblTotal"></span></label>
+            <label>Comisiones a Vendedores <span id="mainForm_lblComisiones"></span></label>
+            <label>Porcentaje de Comisiones <span id="mainForm_lblPorcentaje"></span></label>
+        </div>
+    </section>
+
+    <script type="module">
+        import Cl_index from "./dist/Cl_index.js";
+        new Cl_index();
+    </script>
+</body>
+</html>
